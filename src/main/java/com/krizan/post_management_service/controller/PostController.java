@@ -1,5 +1,9 @@
-package com.krizan.post_management_service;
+package com.krizan.post_management_service.controller;
 
+import com.krizan.post_management_service.dto.PostCreationRequest;
+import com.krizan.post_management_service.dto.PostResponse;
+import com.krizan.post_management_service.service.PostService;
+import com.krizan.post_management_service.dto.PostUpdateRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

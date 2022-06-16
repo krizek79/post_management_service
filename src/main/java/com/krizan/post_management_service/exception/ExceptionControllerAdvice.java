@@ -1,4 +1,4 @@
-package com.krizan.post_management_service;
+package com.krizan.post_management_service.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;

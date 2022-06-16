@@ -1,4 +1,8 @@
-package com.krizan.post_management_service;
+package com.krizan.post_management_service.service;
+
+import com.krizan.post_management_service.dto.PostUpdateRequest;
+import com.krizan.post_management_service.dto.PostCreationRequest;
+import com.krizan.post_management_service.model.Post;
 
 import java.util.List;
 

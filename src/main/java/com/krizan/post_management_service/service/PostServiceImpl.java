@@ -1,5 +1,10 @@
-package com.krizan.post_management_service;
+package com.krizan.post_management_service.service;
 
+import com.krizan.post_management_service.repository.PostRepository;
+import com.krizan.post_management_service.dto.PostUpdateRequest;
+import com.krizan.post_management_service.dto.PostCreationRequest;
+import com.krizan.post_management_service.exception.NotFoundException;
+import com.krizan.post_management_service.model.Post;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;

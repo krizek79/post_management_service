@@ -1,5 +1,6 @@
-package com.krizan.post_management_service;
+package com.krizan.post_management_service.repository;
 
+import com.krizan.post_management_service.model.Post;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

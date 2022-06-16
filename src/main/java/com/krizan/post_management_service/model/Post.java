@@ -1,4 +1,4 @@
-package com.krizan.post_management_service;
+package com.krizan.post_management_service.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.Entity;

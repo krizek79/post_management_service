@@ -1,5 +1,6 @@
-package com.krizan.post_management_service;
+package com.krizan.post_management_service.dto;
 
+import com.krizan.post_management_service.model.Post;
 import lombok.Getter;
 
 @Getter
