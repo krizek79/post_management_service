@@ -1,0 +1,27 @@
+services:
+  api_service:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      post_management-postgres:
+        condition: service_healthy
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://post_management-postgres:5432/post
+      - SPRING_DATASOURCE_USERNAME=admin
+      - SPRING_DATASOURCE_PASSWORD=password
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+
+  post_management-postgres:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=admin
+      - POSTGRES_DB=post
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U post_management-postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
