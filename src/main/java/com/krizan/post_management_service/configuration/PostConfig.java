@@ -1,4 +1,4 @@
-package com.krizan.post_management_service.config;
+package com.krizan.post_management_service.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

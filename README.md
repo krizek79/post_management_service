@@ -2,9 +2,12 @@
 ##  Used Technologies
 - Java 17
 - Spring Boot
+- Spring Data JPA
 - PostgreSQL Database
+- OpenAPI 3.0
+- Docker
 ##  Installation
-`mvn clean install -DskipTests`\
-`docker-compose up -d`
+Maven: &nbsp;`mvn clean install -DskipTests`\
+Docker: `docker-compose up -d`
 ##  Documentation
-[Swagger]()
+Swagger: [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
